@@ -1,0 +1,10 @@
+# O
+今天早上的课程为springboot框架和restful api设计的学习收了尾，主要讲解了如果使用flyway工具快速地进行数据库的迁移，在迁移过程中，明豪老师还带着我们复习了sql的update insert语句的语法。下午时候正式开始了本次bootcamp前端react框架的学习。Jeany老师通过将react、vue以及Angular的特性进行对比，具体说明了react的应用场景。随后通过计数器Counter的code demo分析了component的编写和props的传递，针对我们在联系过程中遇到的setStatus方法不生效的case还有component refresh的case，老师也用同学的代码做sample给我们解答。
+# R
+excited to learn react
+
+# I
+通过今天的课堂，我认识到良好的状态管理和组件设计是构建高效前端应用的关键。一方面良好的组件设计是代码高可重用性的前提，另一方面，只有良好的状态管理才能提高代码的可维护性。react作为一个javascript library，非常注重状态管理和props的传递，其中状态管理可以通过useStatus这一hook，props的传递则在组件声明的时候显式的传递
+，这是react的优点同时也是开发者经常出错的点。很高兴今天在code demo的时候，老师通过具体的代码示例和对我产生问题的及时解答，帮助我理解了在实际开发中可能遇到的挑战和解决方案。
+# D
+我会深入理解今天学习的react的状态管理和组件设计，特别是如何有效使用setState方法和props传递，以提高我的前端开发能力。如果有机会的话，我会把我的经验带回到我的项目组，因为我的项目组最近要使用react框架对整个ui进行重构。
