@@ -3,15 +3,9 @@ import "./CounterGroupGenetor.css"
 
 const CounterGroupGenerator = (props) => {
     const [size, setSize] = useState(0)
-    const handleChange = (e) => {
-        if(e.target.value < 0){
-            setSize(0)
-        }
-        else if(e.target.value > 20){
-            setSize(20)
-        }
-        else {
-            setSize(e.target.value);
+    const handleChange = (event) => {
+        if (checkShouldNoLessThanZero(event) && checkShouldNoHigherThanTwenty(event)){
+            setSize(event.target.value);
         }
     };
     const handleReset = () => {
@@ -19,6 +13,20 @@ const CounterGroupGenerator = (props) => {
             props.setSize(size);
             props.setSum(0);
         }
+    }
+    const checkShouldNoLessThanZero = (event) => {
+        if (event.target.value < 0) {
+            setSize(0)
+            return false;
+        }
+        return true;
+    }
+    const checkShouldNoHigherThanTwenty = (event) => {
+        if (event.target.value > 20) {
+            setSize(20)
+            return false;
+        }
+        return true;
     }
     return (
         <div className={"counter-group-generator-wrapper"}>
