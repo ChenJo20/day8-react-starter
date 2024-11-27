@@ -1,15 +1,17 @@
 import "./Counter.css"
 import {useState} from "react";
 
-const Counter = () => {
+const Counter = (props) => {
     let [counterNumber, setCounterNumber] = useState(0);
 
     function increase() {
         setCounterNumber(counterNumber + 1)
+        props.setSum(props.sum + 1);
     }
 
     function decrease() {
         setCounterNumber(counterNumber - 1)
+        props.setSum(props.sum - 1);
     }
 
     return (

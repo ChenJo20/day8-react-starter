@@ -10,12 +10,15 @@ const CounterGroupGenerator = (props) => {
         else if(e.target.value > 20){
             setSize(20)
         }
-        else setSize(e.target.value);
+        else {
+            setSize(e.target.value);
+        }
     };
     const handleReset = () => {
-        if (size === props.size)
-            return;
-        props.setSize(size);
+        if (size !== props.size) {
+            props.setSize(size);
+            props.setSum(0);
+        }
     }
     return (
         <div className={"counter-group-generator-wrapper"}>
