@@ -1,0 +1,5 @@
+.counter-group-generator-wrapper{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
