@@ -4,15 +4,12 @@ import "./CounterGroupGenetor.css"
 const CounterGroupGenerator = (props) => {
     const [size, setSize] = useState(0)
     const handleChange = (event) => {
-        if (checkShouldNoLessThanZero(event) && checkShouldNoHigherThanTwenty(event)){
+        if (checkShouldNoLessThanZero(event) && checkShouldNoHigherThanTwenty(event)) {
             setSize(event.target.value);
         }
     };
     const handleReset = () => {
-        if (size !== props.size) {
-            props.setSize(size);
-            props.setSum(0);
-        }
+        props.setSize(size);
     }
     const checkShouldNoLessThanZero = (event) => {
         if (event.target.value < 0) {
